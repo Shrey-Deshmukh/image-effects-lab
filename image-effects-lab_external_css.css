@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #e0f2fe, #f8fafc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0f172a;
+}
+
+.app {
+  width: 100%;
+  max-width: 900px;
+  padding: 24px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 2.2rem;
+  margin-bottom: 6px;
+}
+
+header p {
+  color: #475569;
+}
+
+.controls {
+  background: white;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  margin-bottom: 20px;
+}
+
+.upload {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.upload input {
+  margin-top: 6px;
+}
+
+.filters {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+button {
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+
+button:hover {
+  background: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+button.reset {
+  width: 100%;
+  background: #ef4444;
+}
+
+button.reset:hover {
+  background: #dc2626;
+}
+
+.canvas-area {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+  display: flex;
+  justify-content: center;
+}
+
+canvas {
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  max-width: 100%;
+}
+
+footer {
+  text-align: center;
+  margin-top: 12px;
+  color: #64748b;
+  font-size: 0.9rem;
+}

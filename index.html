@@ -1,46 +1,51 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>Some Interesting Image Filters</title>
+  <meta charset="UTF-8">
+  <title>Image Effects Lab</title>
 
-<script type="text/javascript" src="jquery.min.js"></script>
-
-<link rel="stylesheet" type="text/css" href="interesting_filters_external_css.css">
-
+  <link rel="stylesheet" href="image-effects-lab_external_css.css">
+  <script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
 </head>
 
 <body>
-<script src="https://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js">
-</script>
+  <div class="app">
+    <header>
+      <h1>Image Effects Lab</h1>
+      <p>Apply fun visual effects to your images using pixel-level manipulation</p>
+    </header>
 
-<img id="canvas" src="" />
+    <section class="controls">
+      <label class="upload">
+        Upload Image
+        <input type="file" id="imgfile" accept="image/*" onchange="loadimage()">
+      </label>
 
+      <div class="filters">
+        <button onclick="makeredhue()">Red Hue</button>
+        <button onclick="makegreenhue()">Green Hue</button>
+        <button onclick="makebluehue()">Blue Hue</button>
+        <button onclick="makergbhue()">RGB Split</button>
+        <button onclick="makenoiseimg()">Noise</button>
+        <button onclick="makenegativeimg()">Negative</button>
+        <button onclick="makewindowimg()">Window</button>
+        <button onclick="makegrayimg()">Grayscale</button>
+        <button onclick="makesepiaimg()">Sepia</button>
+        <button onclick="makeblacknwhiteimg()">B & W</button>
+      </div>
 
-<div>
-  <h1>Some Interesting Image Filters</h1>
-  <p>In this page you will be be able to add filters to your pictures
-  <br> To download image, right click</p>
+      <button class="reset" onclick="resetimage()">Reset Image</button>
+    </section>
+
+    <section class="canvas-area">
+      <canvas id="can"></canvas>
+    </section>
+
+    <footer>
+      <p>Right-click the canvas to download the image</p>
+    </footer>
   </div>
-<p><canvas id="can"></canvas></p>
 
-<p>Choose your image:
- <input type="file" id="imgfile" accept="image/*" multiple="false" onchange="loadimage()"></p>
-
-<p>
-  <input type="button" value="Red Hue"  onclick="makeredhue()">
-  <input type="button" value="Green Hue" onclick="makegreenhue()">
-  <input type="button" value="Blue Hue" onclick="makebluehue()">
-  <input type="button" value="RGB Hue" onclick="makergbhue()">
-  <input type="button" value="Noise" onclick="makenoiseimg()">
-  <input type="button" value="Negative" onclick="makenegativeimg()">
-  <input type="button" value="Window" onclick="makewindowimg()">
-  <input type="button" value="Grayscale" onclick="makegrayimg()">
-  <input type="button" value="Sepia" onclick="makesepiaimg()">
-  <input type="button" value="Black&White" onclick="makeblacknwhiteimg()">
- </p>
-<p>
-  <input type="button" value="Reset Image" onclick="resetimage()">
-
-  <script type="text/javascript" src="interesting_filters_external_js.js"></script>
-
+  <script src="image-effects-lab_external_js.js"></script>
 </body>
 </html>
