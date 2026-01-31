@@ -5,11 +5,6 @@ Image Effects Lab is a browser-based web application that allows users to experi
 
 Users can upload an image and apply various visual transformations, with the results rendered instantly on an HTML canvas.
 
-<--!## Motivation & Background
-This project was built as a hands-on exercise to better understand how images can be manipulated at the pixel level in the browser. Rather than relying on external libraries or prebuilt filters, the goal was to manually implement visual effects by iterating over pixel data and modifying color channels directly.
-
-Image Effects Lab is intentionally designed as a lightweight and exploratory project, focusing on learning, experimentation, and visual feedback rather than production-grade image editing.
--->
 ## How It Works
 The application follows a simple processing flow:
 
